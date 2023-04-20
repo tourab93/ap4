@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+    /* J'importe depuis gooogle Fonts, différentes polices pour mon code.*/
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0 2%;    
+    margin: 0;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    background-color: #FBE0C3 ;
+}
+
+nav{
+    display: flex; /* Cela permet d'aligner les "enfants de la balise <nav>,
+     qui sont les balises <div> et <ul>*/
+    flex-wrap: wrap;/* Si la page se réticit, alors les élements changeront 
+    d'emplacement */
+    justify-content: space-between;/* met un espace entre div et la liste  */
+    align-items: center; /* la liste va se placer au même niveau que le div"*/
+    
+    position: sticky; /* Lorsque je défile, la barre de navigation reste "collé" 
+    de dessus de la page*/
+    top: 0; /* Permet de positioner au niveau "0" la barre de navigatio*/ 
+    float: right;
+    content: "|";
+    
+    
+   
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: black; /*par exemple*/
+}
+nav .monprofile{
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+    color: black; 
+    
+}
+
+
+
+nav .monprofile h1/* Tourab (mon prénom) */{
+    
+    font-size: 15px;
+} 
+
+
+nav ul /* barre de navigation*/ {
+    display: flex;
+    list-style-type: none;
+    background-color: white;/* pour retirer les points de la barre de navigation qui sont mis
+    par défaut */
+    padding-left: 0%;
+    
+}
+
+nav ul li/* Les elements de la barre de navigation*/{
+    margin-right: 15px;
+    margin-left: 15px; /* L'espce entre chaque element de la barre de navigation'*/
+    cursor: pointer; /* dès lors que vous pointez votre curseur au dessus d'un élémennt
+    le curseur change de forme et se tranforme en "clic"*/
+    border-bottom: 1px solid white; /* La bordure permet de modifier la couleur de la bordure
+    lorsque vous allez placez le curseur au dessus de l'élément*/
+}
+
+nav ul li:hover{/*La pseudo-classe :hover permet de spécifier l'apparence d'un élément au moment où 
+    vous le survolez avec le pointeur, sans nécessairement l'activer.*/
+    border-bottom-color: black; /* permet d'afficher la bordure (jai choisis la couleur noir) 
+    qui de base était présente mais pas visible vu qu'elle était blanche*/
+}
+
+.contenu{
+    display: flex;
+} 
+.contenu form {
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+    
+    
+}
+.contenu header{
+    margin-top: 5%;
+    max-width: 60%;
+    
+}
+
+
+
+.contenu header p{
+    line-height: 30px;
+    max-width: 300%;
+    color:black;
+}
+.contenu .image{
+    float:right;
+}

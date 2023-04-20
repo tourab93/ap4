@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Maison des Ligues</title>
+    <link rel="stylesheet" href="c78.css"/>
+</head>
+<body>
+    <nav>
+        
+       
+        <ul>
+            <li><a href = "acceuil.html">Acceuil</a>  </li>
+            <li><a href = "page2.html">Formulaire</a>  </li>
+            <li><a href = "page3.html">Retrouver une Facture</a>  </li>  
+        </ul>
+    
+    </nav>
+
+
+    <header>
+        <h1>Facturation Maison des Ligues</h1> 
+        <p> Pour retrouver une facture veuillez saisir la Ligue ainsi que la date.
+         </p>
+    </header>
+<section class="contenu">
+    <form>                
+        <fieldset> 
+            <div class="controls">
+                <label for="a1" class="form-label">Sélectionnez la Ligue : <br> </table> </label>
+          
+                <input class="form-control" list="datalistOptions" id="a1" placeholder="Afficher la liste..." pattern="LIGUES|PRESTATION">
+          
+                    <datalist id="datalistOptions">
+                        <option value="LIGUES">
+                        <option value="LIGUES">
+                        <option value="LIGUES">
+                        <option value="LIGUES">
+                    </datalist>          
+            </div>
+            <p>
+                <label for="date">Sélectionnez une date :</label>
+                <input type="date" id="date" name="date">       
+            </p>
+            
+            <input type="submit" value="Validé">
+        </fieldset>
+        
+   
+    </form>
+        
+</section>
+
+</body>
+</html>
